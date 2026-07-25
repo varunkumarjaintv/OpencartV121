@@ -24,6 +24,12 @@ public class HomePage extends BasePage {
 	@FindBy(xpath="//ul[@class='dropdown-menu dropdown-menu-right']//li[5]")
 	WebElement lnklogout;
 	
+	@FindBy(xpath = "//input[@placeholder='Search']")
+	WebElement txtSearch;
+	
+	@FindBy(xpath = "//button[@class='btn btn-default btn-lg']")
+	WebElement btnSearch;
+	
 	public boolean isHomePageLogoVisible() {
 		return homepageLogo.isDisplayed();
 	}
@@ -42,5 +48,13 @@ public class HomePage extends BasePage {
 	
 	public void clicklogout() {
 		lnklogout.click();
+	}
+	
+	public void enterProductName(String pname) {
+		txtSearch.sendKeys(pname);
+	}
+	
+	public void clickSearch() {
+		btnSearch.click();
 	}
 }
