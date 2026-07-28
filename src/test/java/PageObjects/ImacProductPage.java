@@ -18,7 +18,7 @@ public class ImacProductPage extends BasePage {
 	WebElement btnComapare;
 
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
-	WebElement msgSuccess;
+	WebElement msgSuccessAddedtoProductComparsion;
 
 	@FindBy(xpath = "//a[normalize-space(.)='product comparison']")
 	WebElement lnkproductComparison;
@@ -43,6 +43,17 @@ public class ImacProductPage extends BasePage {
 	
 	@FindBy(xpath = "//li[2]//a[1]//img[1]")
 	WebElement imacimg2;
+	
+	@FindBy (xpath = "//button[@id='button-cart']")
+	WebElement btnAddtoCart;
+	
+	@FindBy (xpath = "//div[@class='alert alert-success alert-dismissible']")
+	WebElement msgSuccessAddedtoCart;
+	
+	@FindBy (xpath = "//a[normalize-space(.)='shopping cart']")
+	WebElement lnkShoppingCart;
+	
+
 
 	public String isComapareThisProductbtnAvailable() {
 		return btnComapare.getAttribute("data-original-title");
@@ -53,8 +64,8 @@ public class ImacProductPage extends BasePage {
 		act.moveToElement(btnComapare).click().build().perform();
 	}
 
-	public String productComparisonValidation() {
-		return msgSuccess.getText();
+	public String productComparisonValidationmsg() {
+		return msgSuccessAddedtoProductComparsion.getText();
 	}
 
 	public void clickproductComparison() {
@@ -92,6 +103,18 @@ public class ImacProductPage extends BasePage {
 	
 	public boolean isProductPageVisible() {
 		return ProductPage.isDisplayed();
+	}
+	
+	public void clkAddtoCart() {
+		btnAddtoCart.click();
+	}
+	
+	public String cartAddedSuccesMsg() {
+		return msgSuccessAddedtoCart.getText();
+	}
+	
+	public void clkLnkShoppingCart() {
+		lnkShoppingCart.click();
 	}
 	
 }
