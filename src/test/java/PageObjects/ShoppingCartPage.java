@@ -13,8 +13,15 @@ public class ShoppingCartPage extends BasePage {
 	@FindBy(xpath = "//*[@id='content']/form/div/table/tbody/tr/td[1]/a/img")
 	WebElement shoppingCartImageValidation;
 	
+	@FindBy(xpath = "//a[normalize-space(.)='Continue Shopping']")
+	WebElement btnContinueShopping;
+	
 	public boolean isImageisVisible() {
 		return shoppingCartImageValidation.isDisplayed();
+	}
+	
+	public void clkContinueShopping() {
+		btnContinueShopping.click();
 	}
 
 }
