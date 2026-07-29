@@ -19,7 +19,8 @@
 	  <class name="testCases.TC005_SearchFunctionality"/>
 	  <class name="testCases.TC006_ProductCompare"/>
 	  <class name="testCases.TC007_ProductDisplayPage"/>
-<class name="testCases.TC008_ShoppingAddingCartTest"></class>
+	  <class name="testCases.TC008_ShoppingAddingCartTest"/>
+	  <class name="testCases.TC009_MyWishListTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

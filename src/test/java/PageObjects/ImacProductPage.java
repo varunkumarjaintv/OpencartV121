@@ -53,6 +53,15 @@ public class ImacProductPage extends BasePage {
 	@FindBy (xpath = "//a[normalize-space(.)='shopping cart']")
 	WebElement lnkShoppingCart;
 	
+	@FindBy (xpath = "//div[@id='product-product']//div[@class='btn-group']//button[1]")
+	WebElement btnWishList;
+	
+	@FindBy (xpath = "//div[@class='alert alert-success alert-dismissible']")
+	WebElement msgSuccessAddedtoWishlist;
+	
+	@FindBy (xpath = "//a[normalize-space(.)='wish list']")
+	WebElement linkWishList;
+	
 
 
 	public String isComapareThisProductbtnAvailable() {
@@ -115,6 +124,22 @@ public class ImacProductPage extends BasePage {
 	
 	public void clkLnkShoppingCart() {
 		lnkShoppingCart.click();
+	}
+	
+	public String getbtnWishlistmsg() {
+		return btnWishList.getAttribute("data-original-title");
+	}
+	
+	public void clkAddtoWishList() {
+		btnWishList.click();
+	}
+	
+	public String wishlistAddedSuccessMsg() {
+		return msgSuccessAddedtoWishlist.getText();
+	}
+	
+	public void clkLnkWishList() {
+		linkWishList.click();
 	}
 	
 }

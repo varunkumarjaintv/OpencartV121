@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-27T12:56:57 IST" name="Suite" finished-at="2026-07-27T12:57:01 IST" duration-ms="3952">
+  <suite started-at="2026-07-29T11:40:45 IST" name="Suite" finished-at="2026-07-29T11:40:49 IST" duration-ms="3732">
     <groups>
     </groups>
-    <test started-at="2026-07-27T12:56:57 IST" name="Test" finished-at="2026-07-27T12:57:01 IST" duration-ms="3952">
-      <class name="testCases.TC008_ShoppingAddingCartTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC008_ShoppingAddingCartTest@bcec361]" started-at="2026-07-27T12:56:58 IST" name="setup" finished-at="2026-07-27T12:57:00 IST" duration-ms="2200" status="PASS">
+    <test started-at="2026-07-29T11:40:45 IST" name="Test" finished-at="2026-07-29T11:40:49 IST" duration-ms="3732">
+      <class name="testCases.TC006_ProductCompare">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC006_ProductCompare@bcec361]" started-at="2026-07-29T11:40:46 IST" name="setup" finished-at="2026-07-29T11:40:48 IST" duration-ms="2010" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,15 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ShoppingAddingCart()[pri:0, instance:testCases.TC008_ShoppingAddingCartTest@bcec361]" started-at="2026-07-27T12:57:00 IST" name="ShoppingAddingCart" finished-at="2026-07-27T12:57:01 IST" duration-ms="1310" status="PASS">
+        <test-method signature="productComare()[pri:0, instance:testCases.TC006_ProductCompare@bcec361]" started-at="2026-07-29T11:40:48 IST" name="productComare" finished-at="2026-07-29T11:40:49 IST" duration-ms="1300" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ShoppingAddingCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC008_ShoppingAddingCartTest@bcec361]" started-at="2026-07-27T12:57:01 IST" name="tearDown" finished-at="2026-07-27T12:57:01 IST" duration-ms="166" status="PASS">
+        </test-method> <!-- productComare -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC006_ProductCompare@bcec361]" started-at="2026-07-29T11:40:49 IST" name="tearDown" finished-at="2026-07-29T11:40:49 IST" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC008_ShoppingAddingCartTest -->
+      </class> <!-- testCases.TC006_ProductCompare -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
