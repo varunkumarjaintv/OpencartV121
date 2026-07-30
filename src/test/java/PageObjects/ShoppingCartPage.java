@@ -16,12 +16,19 @@ public class ShoppingCartPage extends BasePage {
 	@FindBy(xpath = "//a[normalize-space(.)='Continue Shopping']")
 	WebElement btnContinueShopping;
 	
+	@FindBy(xpath = "//a[@class='btn btn-primary']")
+	WebElement btnCheckout;
+	
 	public boolean isImageisVisible() {
 		return shoppingCartImageValidation.isDisplayed();
 	}
 	
 	public void clkContinueShopping() {
 		btnContinueShopping.click();
+	}
+	
+	public void clickbtnCheckout() {
+		btnCheckout.click();
 	}
 
 }

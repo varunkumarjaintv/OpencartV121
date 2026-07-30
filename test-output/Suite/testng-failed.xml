@@ -8,13 +8,13 @@
     <parameter name="OS" value="Windows"/>
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC009_MyWishListTest">
+      <class name="testCases.TC003_LoginDDT">
         <methods>
-          <include name="myWishList"/>
           <include name="tearDown"/>
+          <include name="verify_LoginDDT" invocation-numbers="0 2 3 4"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC009_MyWishListTest -->
+      </class> <!-- testCases.TC003_LoginDDT -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
