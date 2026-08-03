@@ -19,6 +19,12 @@ public class MyAccountPage extends BasePage {
 	@FindBy(xpath = "//a[normalize-space(.)='Continue']")
 	WebElement btnContinue;
 	
+	@FindBy (xpath = "//a[normalize-space(.)='Edit Account']")
+	WebElement lnkEditAccount;
+	
+	@FindBy (xpath="//h1[normalize-space(.)='My Account Information']")
+	WebElement txtMyAccountInformation;
+	
 
 	public boolean targetPage() {
 		try {
@@ -35,4 +41,13 @@ public class MyAccountPage extends BasePage {
 	public void clickContinue() {
 		btnContinue.click();
 	}
+	
+	public void clkEditAccount() {
+		lnkEditAccount.click();
+	}
+	
+	public boolean isMyAccountInformationDisplayed() {
+		return txtMyAccountInformation.isDisplayed();
+	}
+	
 }

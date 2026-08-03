@@ -30,6 +30,11 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "//button[@class='btn btn-default btn-lg']")
 	WebElement btnSearch;
 	
+	@FindBy (xpath = "//ul[@class='dropdown-menu dropdown-menu-right']/li[1]/a")
+	WebElement lnkoptionMyAccount;
+	
+	
+	
 	public boolean isHomePageLogoVisible() {
 		return homepageLogo.isDisplayed();
 	}
@@ -56,5 +61,9 @@ public class HomePage extends BasePage {
 	
 	public void clickSearch() {
 		btnSearch.click();
+	}
+	
+	public void clickOptionMyAccount() {
+		lnkoptionMyAccount.click();
 	}
 }
